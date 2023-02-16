@@ -1,0 +1,101 @@
+body {
+            height: 100vh;
+
+
+    /*     Background - Model 1 - Simple */
+    /*    background-color: #111111; */
+        background-color: #112;
+
+    /*      Background - Model 2 - Wallpaper */
+        background-image: url("https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg");
+
+    /*      Background - Model 3 - Wallpaper */
+    /*     background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_960_720.png"); */
+    /*     background-image: url("https://fintechrockers.com/wp-content/uploads/2017/05/wall-2059909.png"); */
+
+
+    /*      Backgroun Image Settings: */
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: cover;
+
+    /*    Optional Overflow */
+        overflow: hidden;
+    }
+
+      #text,
+        #shadow {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 7em;
+            letter-spacing: 20px;
+            font-family: Bad Script;
+            color: #fff;
+        }
+
+        #text {
+            color: #333
+
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 7em;
+            letter-spacing: 20px;
+            font-family: Bad Script;
+            color: #fff;
+        }
+
+        #shadow {
+            text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+        }
+
+       #glow {
+            /* Animation Time: 3s  /  Delay: 1s */
+            animation: neon1 linear infinite 3s 1.5s;
+            will-change: opacity;
+        }
+
+        #blink {
+          /* Animation Time: 2s  /  Delay: 0s */
+            animation: blink linear infinite 2s 0s;
+        }
+
+
+        @keyframes neon1 {
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0.6;
+            }
+        }
+
+
+        @keyframes blink {
+            70% {
+                opacity: 1;
+            }
+            79% {
+                opacity: 0;
+            }
+            81% {
+                opacity: 1;
+            }
+            82% {
+                opacity: 0;
+            }
+            83% {
+                opacity: 1;
+            }
+            92% {
+                opacity: 0;
+            }
+            92.5% {
+                opacity: 1;
+            }
+        }
